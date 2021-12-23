@@ -1,0 +1,289 @@
+{
+"r35": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nissan GT-R",
+    }
+    "slotType" : "main",
+    "slots": [
+        ["type", "default", "description"]
+        ["r35_body","r35_body", "Body",{"coreSlot":true}],
+        ["paint_design","", "Paint Design"],
+        ["licenseplate_design_2_1","","License Plate Design"],
+        ["r35_mod", "", "Additional Modification"],
+	    ["r35_dashguages","","Dash Guages"],
+    ],
+
+    "scaledragCoef":0.4,
+
+    "glowMap":{
+
+        //exterior lights
+            "r35_signal_L":{"simpleFunction":{"signal_L":0.49}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_signal_R":{"simpleFunction":{"signal_R":0.49}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_taillight_L":{"simpleFunction":{"lowhighbeam":0.49}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_taillight_R":{"simpleFunction":{"lowhighbeam":0.49}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_taillight":{"simpleFunction":{"brake":0.49}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_chmsl":{"simpleFunction":{"brake":100}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_headlight":{"simpleFunction":{"lowbeam":0.49,"highbeam":1}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+			"r35_highbeam":{"simpleFunction":{"highbeam":1}, "off":"r35_lights", "on":"r35_lights_on", "on_intense":"r35_lights_on_intense"},
+            "r35_runninglight":{"simpleFunction":{"running":1}, "off":"r35_lights", "on":"r35_lights_on_intense", "on_intense":"r35_lights_on_intense"},
+            "r35_reverselight":{"simpleFunction":{"reverse":1}, "off":"r35_lights", "on":"r35_lights_on_intense", "on_intense":"r35_lights_on_intense"},
+            "r35_foglight":{"simpleFunction":{"fog":1}, "off":"r35_lights", "on":"r35_lights_on_intense", "on_intense":"r35_lights_on_intense"},
+
+        
+		//headlights and tailights	
+            "r35_signal_L_2017":{"simpleFunction":{"signal_L":0.49}, "off":"r35_lights_2017", "on":"r35_lights_2017_on", "on_intense":"r35_lights_2017_on_intense"},
+            "r35_signal_R_2017":{"simpleFunction":{"signal_R":0.49}, "off":"r35_lights_2017", "on":"r35_lights_2017_on", "on_intense":"r35_lights_2017_on_intense"},
+            "r35_taillight_2017":{"simpleFunction":{"brake":0.49}, "off":"r35_lights_2017", "on":"r35_lights_2017_on", "on_intense":"r35_lights_2017_on_intense"},
+            "r35_headlight_2017":{"simpleFunction":{"lowhighbeam":0.49}, "off":"r35_lights_2017", "on":"r35_lights_2017_on", "on_intense":"r35_lights_2017_on_intense"},
+            "r35_reverselight_2017":{"simpleFunction":{"reverse":1}, "off":"r35_lights_2017", "on":"r35_lights_2017_on_intense", "on_intense":"r35_lights_2017_on_intense"},
+
+        //interior lights
+            "r35_gauges":{"simpleFunction":"lowhighbeam", "off":"r35_gauges", "on":"r35_gauges_on"},
+			"r35_interior":{"simpleFunction":"ignition", "off":"r35_interior", "on":"r35_interior_on"},
+			"r35_steeringwheel":{"simpleFunction":"ignition", "off":"r35_steeringwheel", "on":"r35_steeringwheel_on"},
+            "r35_screen":{"simpleFunction":"ignition", "off":"screen_off", "on":"r35_screen"},
+            "r35_display":{"simpleFunction":"ignition", "off":"screen_off", "on":"r35_display"},
+            "r35_odometer":{"simpleFunction":"ignition", "off":"invis", "on":"r35_odometer"},
+            "r35_gauges_screen":{"simpleFunction":"ignition", "off":"invis", "on":"r35_gauges_screen"},
+            "r35_symbols_2017":{"simpleFunction":"ignition", "off":"r35_symbols_2017", "on":"r35_symbols_2017_on"},
+
+        //gauge gear screen
+            "r35_display_segment_top":{"simpleFunction":{"disp_Pa":0.49,"disp_2":0.49,"disp_3":0.49,"disp_5":0.49,"disp_6":0.49,"disp_7":0.49,"disp_8":0.49,"disp_9":0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+			"r35_display_segment_center":{"simpleFunction":{"disp_Na":0.49,"disp_Ra":0.49,"disp_Pa":0.49,"disp_Da":0.49,"disp_2":0.49,"disp_3":0.49,"disp_4":0.49,"disp_5":0.49,"disp_6":0.49,"disp_8":0.49,"disp_9":0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+			"r35_display_segment_bottom":{"simpleFunction":{"disp_Da":0.49,"disp_2":0.49,"disp_3":0.49,"disp_5":0.49,"disp_6":0.49,"disp_8":0.49,"disp_9":0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+			"r35_display_segment_upperleft":{"simpleFunction":{"disp_Pa":0.49,"disp_4":0.49,"disp_5":0.49,"disp_6":0.49,"disp_8":0.49,"disp_9":0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+			"r35_display_segment_upperright":{"simpleFunction":{"disp_Da":0.49,"disp_Pa":0.49,"disp_1":0.49,"disp_2":0.49,"disp_3":0.49,"disp_4":0.49,"disp_7":0.49,"disp_8":0.49,"disp_9",:0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+			"r35_display_segment_lowerleft":{"simpleFunction":{"disp_Da":0.49,"disp_Pa":0.49,"disp_Na":0.49,"disp_Ra":0.49,"disp_2":0.49,"disp_6":0.49,"disp_8":0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+			"r35_display_segment_lowerright":{"simpleFunction":{"disp_Na":0.49,"disp_Da":0.49,"disp_1":0.49,"disp_3":0.49,"disp_4":0.49,"disp_5":0.49,"disp_6":0.49,"disp_7":0.49,"disp_8":0.49,"disp_9":0.49}, "off":"invis", "on":"r35_display", "on_intense":"r35_display"},
+
+        //gauge lights
+            "signal_L":{"simpleFunction":"signal_L", "off":"invis", "on":"decals_gauges"},
+            "signal_R":{"simpleFunction":"signal_R", "off":"invis", "on":"decals_gauges"},
+			"hazard":{"simpleFunction":"hazard", "off":"invis", "on":"decals_gauges"},
+            "checkengine":{"simpleFunction":"checkengine", "off":"invis", "on":"decals_gauges"},
+            "battery":{"simpleFunction":"battery", "off":"invis", "on":"decals_gauges"},
+            "parkingbrake":{"simpleFunction":"parkingbrake", "off":"invis", "on":"decals_gauges"},
+            "lowfuel":{"simpleFunction":"lowfuel", "off":"invis", "on":"decals_gauges"},
+            "lowpressure":{"simpleFunction":"lowpressure", "off":"invis", "on":"decals_gauges"},
+            "abs":{"simpleFunction":"abswarn", "off":"invis", "on":"decals_gauges"},
+            "esc":{"simpleFunction":"esc", "off":"invis", "on":"decals_gauges"},
+            "tcs":{"simpleFunction":"tcs", "off":"invis", "on":"decals_gauges"},
+            "foglight":{"simpleFunction":"fog", "off":"invis", "on":"decals_gauges"},
+            "rearfog":{"simpleFunction":"rearfog", "off":"invis", "on":"decals_gauges"},
+            "oil":{"simpleFunction":"oil", "off":"invis", "on":"decals_gauges"},
+            "lowbeam":{"simpleFunction":"lowhighbeam", "off":"invis", "on":"decals_gauges"},
+            "highbeam":{"simpleFunction":"highbeam", "off":"invis", "on":"decals_gauges"},
+    },
+
+    "controller": [
+        ["fileName"],
+        ["vehicleController", {}],
+        ["r35TurboGauges"],
+		["r35Gauges", {"materialName": "@r35_gauges_screen", "htmlPath": "local://local/vehicles/r35/nissan_navi_screen.html"}],
+		["r35ododisplay", {"materialName": "@r35_odometer", "htmlPath": "local://local/vehicles/r35/odometer.html"}],
+    ],
+
+},
+"r35_skin_interior": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Black Interior",
+        "value":1200,
+    }
+    "slotType" : "skin_interior",
+    "skinName" : "",
+}
+"r35_gauges": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Gauges",
+        "value":1200,
+    }
+    "slotType" : "skin_gauges",
+    "skinName" : "",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_dash", ["r35_dash"]],
+         ["r35_speedunit", ["r35_dash"]],
+	    ["r35_dashguages", ["r35_dash"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+
+        //parkingbrake
+        ["parkingbrake"     ,"r35_parkingbrake", "f7r","f7l","f8r",  {"x":125, "y":0, "z":0} , {"x":-35, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+
+        //turn signal stalk
+        ["turnsignal"  , "r35_signalstalk"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":-13, "z":-2}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+        //wiper stalk
+        ["wipers"  , "r35_wiperstalk"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1]
+    ],
+	"r35Gauges" : {
+		"year": 2008,
+	}
+	"r35ododisplay" : {
+		"year": 2008,
+	}
+}
+"r35_gauges_2012": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2012 Gauges",
+        "value":1200,
+    }
+    "slotType" : "skin_gauges",
+    "skinName" : "2012",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_dash", ["r35_dash"]],
+         ["r35_speedunit_2012", ["r35_dash"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+
+        //parkingbrake
+        ["parkingbrake"     ,"r35_parkingbrake", "f7r","f7l","f8r",  {"x":125, "y":0, "z":0} , {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+
+        //turn signal stalk
+        ["turnsignal"  , "r35_signalstalk"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":-13, "z":-2}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+        //wiper stalk
+        ["wipers"  , "r35_wiperstalk"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1]
+    ],
+	"r35Gauges" : {
+		"year": 2012,
+	}
+	"r35ododisplay" : {
+		"year": 2012,
+	}
+}
+"r35_gauges_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Gauges",
+        "value":1200,
+    }
+    "slotType" : "skin_gauges",
+    "skinName" : "nismo",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_dash_nismo", ["r35_dash"]],
+         ["r35_speedunit_2012", ["r35_dash"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+
+        //parkingbrake
+        ["parkingbrake"     ,"r35_parkingbrake", "f7r","f7l","f8r",  {"x":125, "y":0, "z":0} , {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+
+        //turn signal stalk
+        ["turnsignal"  , "r35_signalstalk"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":-13, "z":-2}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+        //wiper stalk
+        ["wipers"  , "r35_wiperstalk"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1]
+    ],
+	"r35Gauges" : {
+		"year": 2012,
+	}
+	"r35ododisplay" : {
+		"year": 2012,
+	}
+}
+"r35_gauges_2017": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2017 Gauges",
+        "value":1200,
+    }
+    "slotType" : "skin_gauges",
+    "skinName" : "2017",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_dash_2017", ["r35_dash"]],
+         ["r35_speedunit_2012", ["r35_dash"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+
+        //parkingbrake
+        ["parkingbrake"     ,"r35_parkingbrake_2017", "f7r","f7l","f8r",  {"x":125, "y":0, "z":0} , {"x":-25, "y":0, "z":0}    , {"x":0.0, "y":0, "z":0}, 0, 1, 0, 1],
+
+        //turn signal stalk
+        ["turnsignal"  , "r35_signalstalk_2017"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":-13, "z":-2}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1],
+        //wiper stalk
+        ["wipers"  , "r35_wiperstalk_2017"      , "f1l","f1r","f6l",  {"x":0, "y":0, "z":180}, {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, -1, 1, 0, 1]
+    ],
+	"r35Gauges" : {
+		"year": 2012,
+	}
+	"r35ododisplay" : {
+		"year": 2012,
+	}
+}
+"r35_dash_guages": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Dash Gauges",
+        "value":1200,
+    }
+    "slotType" : "r35_dashgauges",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_dashguages", ["r35_guages"]],
+    ],
+}
+"r35_skin_00": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"#00 Racing Livery",
+        "value":3600,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "00",
+}
+"r35_skin_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Accents",
+        "value":3600,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "nismo",
+}
+"r35_skin_12": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"#12 Racing Livery",
+        "value":3600,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "12",
+}
+"r35_skin_18": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"#18 Racing Livery",
+        "value":3600,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "18",
+}
+"r35_skin_212": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"#212 Racing Livery",
+        "value":3600,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "212",
+}
+"r35_skin_flakes_red": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Red Flakes",
+        "value":3600,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "red_flakes",
+}
+}

@@ -1,0 +1,420 @@
+{
+"r35_brake_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front Disc Brakes",
+        "value":1200,
+    }
+    "slotType" : "r35_brake_F",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_F","brakepad_F_semi_race", "Front Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.735,"y":-1.39,"z":0.315}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x":0.735,"y":-1.39,"z":0.315}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_disc_drilled", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_disc_drilled", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x":0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":180,"y":0,"z":0}}],
+        ["brake_caliper_6pot_yellow_rotopad", ["r35_hub_F","wheelhub_FR"], [], {"pos":{"x":-0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":-180,"y":0,"z":0}}],
+        ["brake_caliper_6pot_yellow_rotopad", ["r35_hub_F","wheelhub_FL"], [], {"pos":{"x":0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":180,"y":180,"z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":2800},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.33},
+        {"brakeMass":9.0},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":1.15},
+        {"absSlipRatioTarget":0.2},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+"r35_brake_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear Disc Brakes",
+        "value":1100,
+    }
+    "slotType" : "r35_brake_R",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_R","brakepad_R_semi_race", "Rear Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_disc_drilled", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.1,"y":1.1,"z":1.1}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_disc_drilled", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.1,"y":1.1,"z":1.1}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_caliper_4pot_yellow_rotopad", ["r35_hub_R","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.1,"y":1.1,"z":1.1}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_caliper_4pot_yellow_rotopad", ["r35_hub_R","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.1,"y":1.1,"z":1.1}, "rot":{"x":0,"y":180,"z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":1800},
+        {"brakeInputSplit":0.5},
+        {"brakeSplitCoef":0.5},
+        {"parkingTorque":1600},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.30},
+        {"brakeMass":7.5},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":0.85},
+        {"absSlipRatioTarget":0.14},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+"r35_brake_F_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Front Disc Brakes",
+        "value":1200,
+    }
+    "slotType" : "r35_brake_F",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_F","brakepad_F_semi_race", "Front Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.735,"y":-1.39,"z":0.315}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x":0.735,"y":-1.39,"z":0.315}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_disc_drilled", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.2,"y":1.2,"z":1.2}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_disc_drilled", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x":0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.2,"y":1.2,"z":1.2}, "rot":{"x":180,"y":0,"z":0}}],
+        ["brake_caliper_6pot_red_rotopad", ["r35_hub_F","wheelhub_FR"], [], {"pos":{"x":-0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.2,"y":1.2,"z":1.2}, "rot":{"x":-180,"y":0,"z":0}}],
+        ["brake_caliper_6pot_red_rotopad", ["r35_hub_F","wheelhub_FL"], [], {"pos":{"x":0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.2,"y":1.2,"z":1.2}, "rot":{"x":180,"y":180,"z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":3100},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.33},
+        {"brakeMass":9.0},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":1.2},
+        {"absSlipRatioTarget":0.2},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+"r35_brake_R_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Rear Disc Brakes",
+        "value":1100,
+    }
+    "slotType" : "r35_brake_R",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_R","brakepad_R_semi_race", "Rear Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_disc_drilled", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_disc_drilled", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_caliper_4pot_red_rotopad", ["r35_hub_R","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_caliper_4pot_red_rotopad", ["r35_hub_R","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":180,"z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":2100},
+        {"brakeInputSplit":0.5},
+        {"brakeSplitCoef":0.5},
+        {"parkingTorque":1600},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.31},
+        {"brakeMass":7.5},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":0.9},
+        {"absSlipRatioTarget":0.14},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+"r35_brake_F_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Front Disc Brakes",
+        "value":1600,
+    }
+    "slotType" : "r35_brake_F",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_F","brakepad_F_race", "Front Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.735,"y":-1.39,"z":0.315}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x":0.735,"y":-1.39,"z":0.315}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_disc_drilled", ["wheel_FR","wheelhub_FR"], [], {"pos":{"x":-0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.25,"y":1.25,"z":1.25}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_disc_drilled", ["wheel_FL","wheelhub_FL"], [], {"pos":{"x":0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.25,"y":1.25,"z":1.25}, "rot":{"x":180,"y":0,"z":0}}],
+        ["brake_caliper_6pot_yellow_rotopad", ["r35_hub_F","wheelhub_FR"], [], {"pos":{"x":-0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.25,"y":1.25,"z":1.25}, "rot":{"x":-180,"y":0,"z":0}}],
+        ["brake_caliper_6pot_yellow_rotopad", ["r35_hub_F","wheelhub_FL"], [], {"pos":{"x":0.74,"y":-1.39,"z":0.315}, "scale":{"x":1.25,"y":1.25,"z":1.25}, "rot":{"x":180,"y":180,"z":0}}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        //["$braketorque", "range", "", "Brakes", 4200, 1000, 5000, "Max Brake Torque", "Scales the overall brake torque", {"minDis":0}]
+        ["$brakebias", "range", "", "Brakes", 0.68, 0, 1, "Front/Rear Bias", "Percent of brake torque to the front wheels", {"minDis":0, "maxDis":100}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        {"brakeTorque":3600},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.36},
+        {"brakeMass":10.75},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":1.3},
+        {"absSlipRatioTarget":0.18},
+        //brake sounds
+        {"squealCoefNatural": 1.0, "squealCoefLowSpeed": 1.0}
+    ],
+},
+"r35_brake_R_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Rear Disc Brakes",
+        "value":1500,
+    }
+    "slotType" : "r35_brake_R",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_R","brakepad_R_race", "Rear Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["brake_hub_5l", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_hub_5l", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.0,"y":1.0,"z":1.0}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_disc_drilled", ["wheel_RR","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_disc_drilled", ["wheel_RL","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":180}}],
+        ["brake_caliper_4pot_yellow_rotopad", ["r35_hub_R","wheelhub_RR"], [], {"pos":{"x":-0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":0,"z":0}}],
+        ["brake_caliper_4pot_yellow_rotopad", ["r35_hub_R","wheelhub_RL"], [], {"pos":{"x":0.74,"y":1.41,"z":0.36}, "scale":{"x":1.15,"y":1.15,"z":1.15}, "rot":{"x":0,"y":180,"z":0}}],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+        //if no race front brake, use default value
+        //{"brakeTorque":"$=case($brakebias == nil, $brakestrength*1400, $brakestrength*4300*(1-$brakebias))"},
+        {"brakeTorque":3000},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":2200},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.32},
+        {"brakeMass":8.25},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":1.0},
+        {"absSlipRatioTarget":0.16},
+        //brake sounds
+        {"squealCoefNatural": 0.0, "squealCoefLowSpeed": 0.0}
+    ],
+},
+"r35_brake_F_HC": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Offset Front Disc Brakes",
+        "value":1200,
+    }
+    "slotType" : "r35_brake_F_HC",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_F","brakepad_F_semi_race", "Front Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["r35_brakedisc_FR_HC", ["wheel_FR","wheelhub_FR"]],
+        ["r35_brakedisc_FL_HC", ["wheel_FL","wheelhub_FL"]],
+        ["r35_caliper_F_HC", ["r35_lowerarm_F","r35_upperarm_F","r35_tierod_F","r35_hub_F"]],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+
+        {"brakeTorque":3000},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.38},
+        {"brakeMass":10.5},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":1.2},
+    ],
+},
+"r35_brake_R_HC": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Offset Rear Disc Brakes",
+        "value":1100,
+    }
+    "slotType" : "r35_brake_R_HC",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_R","brakepad_R_semi_race", "Rear Brake Pads"{"coreSlot":true}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["r35_brakedisc_RR_HC", ["wheel_RR","wheelhub_RR"], []],
+        ["r35_brakedisc_RL_HC", ["wheel_RL","wheelhub_RL"], []],
+        ["r35_caliper_R_HC", ["r35_hub_R"]],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+
+        {"brakeTorque":2000},
+        {"brakeInputSplit":0.5},
+        {"brakeSplitCoef":0.35},
+        {"parkingTorque":2000},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.38},
+        {"brakeMass":5.7},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":0.9},
+    ],
+},
+"r35_brake_F_race_HC": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Offset Race Front Disc Brakes",
+        "value":1600,
+    }
+    "slotType" : "r35_brake_F_HC",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_F","brakepad_F_race", "Front Brake Pads"{"coreSlot":true}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
+        //["$braketorque_F", "range", "", "Brakes", 2400, 0, 4000, "Front Brake Torque", "Strength of the front brakes", {"minDis":0}]
+        ["$braketorque", "range", "", "Brakes", 5000, 2000, 6000, "Max Brake Torque", "Scales the overall brake torque", {"minDis":0}]
+        ["$brakebias", "range", "", "Brakes", 0.72, 0, 1, "Front/Rear Bias", "Percent of brake torque to the front wheels", {"minDis":0, "maxDis":100}],
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["r35_brakedisc_FR_HC", ["wheel_FR","wheelhub_FR"]],
+        ["r35_brakedisc_FL_HC", ["wheel_FL","wheelhub_FL"]],
+        ["r35_caliper_F_HC", ["r35_lowerarm_F","r35_upperarm_F","r35_tierod_F","r35_hub_F"]],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+
+        {"brakeTorque":"$=$braketorque*$brakebias"},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":0},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.37},
+        {"brakeMass":10.5},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":1.2},
+    ],
+},
+"r35_brake_R_race_HC": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Offset Race Rear Disc Brakes",
+        "value":1500,
+    }
+    "slotType" : "r35_brake_R_HC",
+    "slots": [
+        ["type", "default", "description"]
+        ["brakepad_R","brakepad_R_race", "Rear Brake Pads"{"coreSlot":true}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
+        //["$braketorque_R", "range", "", "Brakes", 2000, 0, 4000, "Rear Brake Torque", "Strength of the rear brakes"{"minDis":0}]
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        //brake discs
+        ["r35_brakedisc_RR_HC", ["wheel_RR","wheelhub_RR"], []],
+        ["r35_brakedisc_RL_HC", ["wheel_RL","wheelhub_RL"], []],
+        ["r35_caliper_R_HC", ["r35_hub_R"]],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        //brakes
+
+        //if no race front brake, use default value
+        {"brakeTorque":"$=case($braketorque == nil, 1500, $braketorque*(1-$brakebias))"},
+        {"brakeInputSplit":1},
+        {"brakeSplitCoef":1},
+        {"parkingTorque":2000},
+        {"brakeSpring":150},
+
+        //brake thermals
+        {"enableBrakeThermals":true},
+        {"brakeDiameter":0.345},
+        {"brakeMass":5.7},
+        {"brakeType":"vented-disc"},
+        {"rotorMaterial":"steel"},
+        {"brakeVentingCoef":0.95},
+    ],
+},
+}

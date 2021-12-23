@@ -1,0 +1,133 @@
+{
+"r35_glass": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Glass",
+        "value":1600,
+    }
+    "slotType" : "r35_glass",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //glass
+         {"deformGroup":"windshield_break", "deformMaterialBase":"r35_glass", "deformMaterialDamaged":"r35_windshield_dmg"}
+         ["r35_windshield", ["r35_windshield"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound1", "deformVolume":0.7}],
+         {"deformGroup":"windshield_break", "deformMaterialBase":"r35_glass_int", "deformMaterialDamaged":"r35_glass_int"}
+         ["r35_windshield_int", ["r35_windshield"]],
+
+         {"deformGroup":"windshield_break", "deformMaterialBase":"glass_invisible", "deformMaterialDamaged":"glass_mirror"}
+         ["r35_windshield_dmg", ["r35_windshield"]],
+
+         {"deformGroup":"backlight_break", "deformMaterialBase":"r35_glass", "deformMaterialDamaged":"r35_glass_dmg"}
+         ["r35_backlight", ["r35_body"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound9", "deformVolume":0.8}],
+         {"deformGroup":"backlight_break", "deformMaterialBase":"r35_glass_int", "deformMaterialDamaged":"r35_glass_dmg"}
+         ["r35_backlight_int", ["r35_body"]],
+
+         {"deformGroup":"sideglass_R_break", "deformMaterialBase":"r35_glass", "deformMaterialDamaged":"r35_glass_dmg"}
+         ["r35_sideglass_R", ["r35_body"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound5", "deformVolume":0.6}],
+         {"deformGroup":"sideglass_R_break", "deformMaterialBase":"r35_glass_int", "deformMaterialDamaged":"r35_glass_dmg"}
+         ["r35_sideglass_R_int", ["r35_body"]],
+
+         {"deformGroup":"sideglass_L_break", "deformMaterialBase":"r35_glass", "deformMaterialDamaged":"r35_glass_dmg"}
+         ["r35_sideglass_L", ["r35_body"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound6", "deformVolume":0.6}],
+         {"deformGroup":"sideglass_L_break", "deformMaterialBase":"r35_glass_int", "deformMaterialDamaged":"r35_glass_dmg"}
+         ["r35_sideglass_L_int", ["r35_body"]],
+
+         {"deformGroup":""}
+         ["r35_wipers", ["r35_body","r35_uppermounts_R","r35_shocktop_R","r35_shocktop_F", "r35_rad", "r35_engine_bay"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":true}
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_GLASS"},
+         {"nodeWeight":2.66},
+         {"group":""},
+         //windshield node
+         ["wi1", 0, -0.49, 1.1{"group":["r35_windshield","gps"]}],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //windshield node
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          {"beamSpring":1348050,"beamDamp":50},
+          {"beamDeform":3750,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"windshield_break", "deformationTriggerRatio":0.01},
+          ["wi1","rf1r"],
+          ["wi1","rf1"],
+          ["wi1","rf1l"],
+
+          ["wi1","p1r"],
+          ["wi1","p1l"],
+          ["wi1","p2r"],
+          ["wi1","p2l"],
+
+          ["wi1","f6r"],
+          ["wi1","f6l"],
+
+          ["wi1","f6rr"],
+          ["wi1","f6ll"],
+          ["wi1","p2rr"],
+          ["wi1","p2ll"],
+
+          {"beamDeform":4050,"beamStrength":10250},
+          ["f6rr","rf1"],
+          ["f6ll","rf1"],
+
+          ["f6r","rf1"],
+          ["f6l","rf1"],
+          ["p1r","p1l"],
+
+          //brittle glass beams
+          {"beamSpring":1238050,"beamDamp":50},
+          {"beamDeform":8000,"beamStrength":8000},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          //side glass
+          {"deformGroup":"sideglass_R_break", "deformationTriggerRatio":0.03},
+          {"breakGroup":"sideglass_R"},
+          ["rf3r","q1r"],
+          ["rf3r","q2r"],
+          ["rf4r","q1r"],
+          ["rf4r","q2r"],
+          ["rf4r","q3r"],
+          //["p4r","q3r"],
+          //["p4r","p5r"],
+
+          {"deformGroup":"sideglass_L_break", "deformationTriggerRatio":0.03},
+          {"breakGroup":"sideglass_L"},
+          ["rf3l","q1l"],
+          ["rf3l","q2l"],
+          ["rf4l","q1l"],
+          ["rf4l","q2l"],
+          ["rf4l","q3l"],
+          //["p4l","q3l"],
+          //["p4l","p5l"],
+
+          //rear window
+          {"beamSpring":1238050,"beamDamp":50},
+          {"beamDeform":10000,"beamStrength":10000},
+          {"deformGroup":"backlight_break", "deformationTriggerRatio":0.001}
+          {"breakGroup":"backlight"},
+          ["rf4","tb1"],
+          ["rf4","tb1l"],
+          ["rf4","tb1r"],
+          ["rf4r","tb1"],
+          ["rf4l","tb1"],
+
+          ["tb1r","rf4l"],
+          ["tb1l","rf4r"],
+          ["p6r","p6l"],
+
+          ["p6r","rf4l"],
+          ["p6r","tb1"],
+          ["p6l","rf4r"],
+          ["p6l","tb1"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}

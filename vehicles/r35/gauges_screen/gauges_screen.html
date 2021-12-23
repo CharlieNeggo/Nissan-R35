@@ -1,0 +1,21 @@
+<html ng-app="gaugesScreen">
+<head>
+  <meta charset="UTF-8">
+  <script src="../../../ui/lib/ext/angular.min.js"></script>
+  <script src="gauges_screen.js"></script>
+  <style type="text/css">
+    .overlay {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 512px;
+      height: 375px;
+    }
+  </style>
+</head>
+
+<body ng-controller="GaugesScreenController as gaugeCtrl">
+  <img src="nis_gtr_17_centerconsole.png" id="nis_gtr_17_centerconsole" class="overlay">
+  <div style="left: 47px; top: 95px; position: absolute" ng-include="'forcedinductionc.svg'" onload="svgLoaded()"></div>
+</body>
+</html>

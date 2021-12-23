@@ -1,0 +1,83 @@
+{
+"r35_radiator": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Radiator",
+        "value":180,
+    }
+    "slotType" : "r35_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_radiator", ["r35_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.4,
+        "radiatorEffectiveness":16000,
+        "coolantVolume":9,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":3,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"r35_radiator_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Performance Radiator",
+        "value":280,
+    }
+    "slotType" : "r35_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_radiator", ["r35_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.5,
+        "radiatorEffectiveness":30000,
+        "coolantVolume":16,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":0,
+        "radiatorFanMaxAirSpeed":100,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"r35_radiator_race_ultra": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Ultra High Performance Radiator",
+        "value":280,
+    }
+    "slotType" : "r35_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_radiator", ["r35_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.6,
+        "radiatorEffectiveness":40000,
+        "coolantVolume":16,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":0,
+        "radiatorFanMaxAirSpeed":100,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}

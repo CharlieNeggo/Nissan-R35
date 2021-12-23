@@ -1,0 +1,150 @@
+{
+"r35_lettering_bumper_R_gtr": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"GT-R Lettering",
+        "value":40,
+    }
+    "slotType" : "r35_lettering_bumper_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_lettering_gtr", ["r35_bumper_R"]],
+    ],
+}
+"r35_lettering_bumper_R_specv": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"SpecV Lettering",
+        "value":40,
+    }
+    "slotType" : "r35_lettering_bumper_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_lettering_gtr", ["r35_bumper_R"]],
+		 ["r35_lettering_specv", ["r35_bumper_R"]],
+    ],
+}
+"r35_lettering_bumper_R_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Lettering",
+        "value":40,
+    }
+    "slotType" : "r35_lettering_bumper_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_lettering_gtr", ["r35_bumper_R"]],
+		 ["r35_lettering_nismo", ["r35_bumper_R"]],
+    ],
+}
+"r35_bumper_R_logo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nissan Logo",
+        "value":40,
+    }
+    "slotType" : "r35_logo_r",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_logo_R", ["r35_trunk"]],
+    ],
+}
+"r35_gopros": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"GoPros",
+        "value":40,
+    }
+    "slotType" : "r35_lettering_bumper_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_gopros", ["r35_bumper_R"]],
+    ],
+}
+"r35_intercooler": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Intercooler",
+        "value":40,
+    }
+    "slotType" : "r35_intercooler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_intercooler", ["r35_bumper_F"]],
+    ],
+}
+"r35_spoiler": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Spoiler",
+        "value":40,
+    }
+    "slotType" : "r35_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_wing", ["r35_trunk"]],
+         ["r35_chmsl", ["r35_trunk"]],
+    ],
+}
+"r35_spoiler_drag": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Drag Spoiler",
+        "value":40,
+    }
+    "slotType" : "r35_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_spoiler_drag", ["r35_trunk"]],
+    ],
+}
+"r35_spoiler_LW": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Big Spoiler",
+        "value":40,
+    }
+    "slotType" : "r35_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_spoiler_LW", ["r35_trunk"]],
+    ],
+}
+"r35_spoiler_LW2": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Lip Spoiler",
+        "value":40,
+    }
+    "slotType" : "r35_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_spoiler_LW2", ["r35_trunk"]],
+    ],
+}
+"r35_spoiler_specv": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"SpecV Spoiler",
+        "value":40,
+    }
+    "slotType" : "r35_spoiler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_wing_specv", ["r35_trunk"]],
+         ["r35_chmsl", ["r35_trunk"]],
+    ],
+}
+"r35_splitter_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Front Splitter",
+        "value":40,
+    }
+    "slotType" : "r35_splitter_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_splitter_F", ["r35_bumper_F"]],
+    ],
+}
+}

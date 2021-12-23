@@ -1,0 +1,33 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_0800.wav", 800],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_1500.wav", 1500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_2500.wav", 2500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_3500.wav", 3500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_4500.wav", 4500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_5500.wav", 5500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_off_6500.wav", 6500]
+        ]
+        ,
+        [
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_0800.wav", 800],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_1500.wav", 1500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_2000.wav", 2000],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_2500.wav", 2500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_3000.wav", 3000],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_3500.wav", 3500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_5000.wav", 5000],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_5500.wav", 5500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_6000.wav", 6000],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_6500.wav", 6500],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_7000.wav", 7000],
+			["art/sound/engine/fm7/nis_gtr_12/Exhaust_on_7500.wav", 7500]
+		]
+    ]
+}

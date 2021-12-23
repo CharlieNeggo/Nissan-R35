@@ -1,0 +1,3 @@
+{
+    "resetTripComputer":   {"order":  5, "onDown":"r35odotrip.tripReset()", "title": "Reset trip computer", "desc": "Resets trip computer to 0 km" },
+}

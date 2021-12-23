@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+	<style>
+		
+		@font-face {
+			font-family: DotMatrix;
+			src: url(/vehicles/r35/DotMatrix.ttf);
+		}
+
+		body {
+			margin: 0;
+			padding-top: 0px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			font-size: 35px;
+			overflow: hidden;
+		}
+
+		#gauge {
+			width: 100%;
+		}
+
+		#center-screen {
+			width: 100%;
+			margin-top: 10px;
+			margin-left: 120px;
+			color: #FFD800;
+			font-size: 20px;
+			font-variant: narrow;
+			text-align: left;
+		}
+				
+		#speed {
+			font-size: 30px;
+			padding-bottom: 50px;
+			display: inline;
+			font-family: DotMatrix;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="gauge">
+		<div id="center-screen">
+			<div id="speed">
+				<div id="speedVal"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function updateData(data) {
+			document.getElementById('speedVal').innerText = (data.speed * 3.6).toFixed(0);
+		};
+	</script>
+</body>
+
+</html>

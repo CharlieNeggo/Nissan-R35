@@ -1,0 +1,26 @@
+{
+  "Name":"GT-R",
+  "Brand":"Nissan",
+  "Author":"BeamNG",
+  "Country":"Japan",
+  "Type":"Car",
+  "Body Style":"Coupe",
+  "Years":{"min":2007, "max":2020},
+  "Derby Class":"Sports Car",
+  "default_pc":"premium_DCT",
+  "default_color":"Regal Red",
+  "colors":{
+    "Black Obsidian": "0 0 0 1.35",
+	"Gunmetal": "0.38 0.38 0.384 1.35",
+	"Ivory": "0.898 0.902 0.878 1.35",
+	"Solid Red": "0.537 0 0.125 1.35",
+	"Super Silver": "0.686 0.694 0.702 1.35",
+	"Titanium": "0.357 0.357 0.361 1.35",
+	"Deep Blue": "0.055 0.078 0.22 1.45",
+	"Regal Red": "0.675 0.055 0.098 1.45",
+	"Matte Gray": "0.447 0.447 0.435 1.8",
+	"Blaze": "0.804 0.4 0.082 1.4",
+	"Ultimate Opal Black": "0.06 0.02 0.02 1.4",
+	"Bayside Blue": "0.145 0.369 0.835 1.5",
+  }
+}

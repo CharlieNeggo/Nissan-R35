@@ -1,0 +1,38 @@
+{
+"r35_licenseplate_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front License Plate",
+        "value":0,
+    }
+    "slotType" : "r35_licenseplate_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["r35_bumper_F"],[],{"pos":{"x":0.491495, "y":-2.25430, "z":0.48654}, "rot":{"x":0, "y":0, "z":13.7}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+}
+"r35_licenseplate_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear License Plate",
+        "value":0,
+    }
+    "slotType" : "r35_licenseplate_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["r35_bumper_R"],[],{"pos":{"x":0.0, "y":2.32, "z":0.61124}, "rot":{"x":12.5, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+}
+"r35_licenseplate_R_b": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear License Plate",
+        "value":0,
+    }
+    "slotType" : "r35_licenseplate_R_b",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["licenseplate", ["r35_bumper_R"],[],{"pos":{"x":0.0, "y":2.325, "z":0.61124}, "rot":{"x":12.5, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+}
+}

@@ -1,0 +1,39 @@
+{
+"r35_fenderflare_FR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Front Right Fender Flare",
+        "value":400,
+    },
+    "slotType" : "r35_fenderflare_FR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_fenderflare_FR", ["r35_fender_R"]],
+    ],
+},
+"r35_fenderflare_FL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Front Left Fender Flare",
+        "value":400,
+    },
+    "slotType" : "r35_fenderflare_FL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_fenderflare_FL", ["r35_fender_L"]],
+    ],
+},
+"r35_fenderflare_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Liberty Walk Rear Fender Flares",
+        "value":800,
+    },
+    "slotType" : "r35_fenderflare_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["r35_fenderflare_RR", ["r35_body"]],
+         ["r35_fenderflare_RL", ["r35_body"]],
+    ],
+},
+}

@@ -1,0 +1,198 @@
+{
+"r35_transmission_6DCT": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"6-Speed Dual Clutch Transmission",
+        "value":6300,
+    },
+    "slotType" : "r35_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["r35_transfer_case","r35_transfer_case_AWD", "Transfer Case"],
+        ["r35_differential_R","r35_differential_R", "Rear Differential"],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":[-3.383, 0, 4.056, 2.301, 1.595, 1.248, 1.001, 0.75],
+        "friction": 1.24,
+        "dynamicFriction": 0.0012,
+        "torqueLossCoef": 0.0155,
+        "parkLockTorque":2000,
+        "additionalEngineInertia":0.05,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.48, 0.00, 0.18, 0.16, 0.14, 0.12, 0.10, 0.08],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.11, 0.13, 0.15, 0.17, 0.19, 0.21],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>helical_01>twine_in",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>helical_01>twine_out",
+    },
+    "vehicleController": {
+        "automaticModes":"PRNDSM",
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.2,
+        //"aggressionSmoothingUp":2
+        //"aggressionSmoothingDown":0.06
+        "lowShiftDownRPM":[0,0,0,1600,1600,1500,1400,1300,1300],
+        "lowShiftUpRPM":[0,0,2800,2600,2400,2200,2000,2000],
+        "clutchLaunchStartRPM": 2500,
+        "clutchLaunchTargetRPM": 3000,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["r35_transmission", ["r35_engine","r35_transmission"],[]{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed Auto--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"r35_transmission"},
+         {"nodeWeight":42},
+         ["tra1", 0.0, -0.36, 0.33],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"r35_transmission_6DCT_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race 6-Speed Dual Clutch Transmission",
+        "value":11000,
+    },
+    "slotType" : "r35_transmission",
+    "slots": [
+        ["type", "default", "description"],
+        ["r35_transfer_case","r35_transfer_case_AWD", "Transfer Case"],
+        ["r35_differential_R","r35_differential_R", "Rear Differential"],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$gear_R", "range", ":1", "Transmission", 2.95, 0.5, 5, "Reverse Gear Ratio", "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_1", "range", ":1", "Transmission", 3.91, 0.5, 5, "1st Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_2", "range", ":1", "Transmission", 2.29, 0.5, 5, "2nd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_3", "range", ":1", "Transmission", 1.65, 0.5, 5, "3rd Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_4", "range", ":1", "Transmission", 1.30, 0.5, 5, "4th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_5", "range", ":1", "Transmission", 1.08, 0.5, 5, "5th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+        ["$gear_6", "range", ":1", "Transmission", 0.88, 0.5, 5, "6th Gear Ratio",     "Torque multiplication ratio", {"stepDis":0.01}],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["dctGearbox", "gearbox", "mainEngine", 1],
+    ],
+    "gearbox": {
+        "uiName":"Gearbox",
+        "gearRatios":["$=-$gear_R", 0, "$gear_1", "$gear_2", "$gear_3", "$gear_4", "$gear_5", "$gear_6"],
+        "parkLockTorque":2000,
+        "friction": 1.56,
+        "dynamicFriction": 0.0015,
+        "torqueLossCoef": 0.0145,
+        "additionalEngineInertia":0.02,
+        "gearboxNode:":["tra1"],
+
+        "gearWhineCoefsInput":  [0.64, 0.00, 0.60, 0.55, 0.45, 0.45, 0.45, 0.45],
+        "gearWhineCoefsOutput": [0.00, 0.00, 0.60, 0.60, 0.60, 0.60, 0.60, 0.60],
+        "gearWhineInputEvent": "event:>Vehicle>Transmission>helical_01>twine_in",
+        "gearWhineOutputEvent": "event:>Vehicle>Transmission>helical_01>twine_out",
+    },
+    "vehicleController": {
+        "automaticModes":"PRNDM",
+        "calculateOptimalLoadShiftPoints": true,
+        "shiftDownRPMOffsetCoef":1.27,
+        //"aggressionSmoothingUp":2
+        //"aggressionSmoothingDown":0.05
+        "aggressionHoldOffThrottleDelay":3,
+        //"lowShiftDownRPM":[0,0,0,1700,1800,1700,1600,1600,1600],
+        //"lowShiftUpRPM":[0,0,3600,3400,3000,2900,2900,2900],
+        "lowShiftDownRPM":[0,0,0,2300,2600,2600,2600,2600,2600],
+        "lowShiftUpRPM":[0,0,4200,4200,4050,3950,3750,3750],
+        //"wheelSlipUpThreshold":100,
+        "clutchLaunchStartRPM": 3500,
+        "clutchLaunchTargetRPM": 4000,
+        "autoDownShiftInM": false,
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--6 Speed Auto--
+         {"selfCollision":false},
+         {"collision":true},
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"r35_transmission"},
+         {"nodeWeight":42},
+         ["tra1", 0.0, -0.36, 0.33],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":500},
+          {"beamDeform":250000,"beamStrength":"FLT_MAX"},
+          ["tra1","e1r"],
+          ["tra1","e1l"],
+          ["tra1","e3r"],
+          ["tra1","e3l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"r35_transfer_case_RWD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"RWD Transfer Case",
+        "value":800,
+    },
+    "slotType" : "r35_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["shaft", "transfercase", "gearbox", 1, {"friction":0.4, "dynamicFriction":0.00035, "uiName":"Rear Output Shaft"}],
+    ],
+},
+"r35_transfer_case_AWD": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"AWD Transfer Case",
+        "value":3800,
+    },
+    "slotType" : "r35_transfer_case",
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "transfercase", "gearbox", 1, {"diffType":"open", "diffTorqueSplit":0.60, "friction":0.5, "dynamicFriction":0.0004, "torqueLossCoef":0.012, "uiName":"Center Differential","defaultVirtualInertia":0.1,"speedLimitCoef":0.1}],
+    ],
+},
+"r35_transfer_case_AWD_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race AWD Transfer Case",
+        "value":4500,
+    },
+    "slotType" : "r35_transfer_case",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$difftorquesplit_C", "range", "", "Differentials", 0.70, 0.6, 0.85, "Base Torque Split", "Percent torque to rear wheels", {"minDis":60, "maxDis":85, "stepDis":1, "subCategory":"Center"}],
+        ["$lsdpreload_C", "range", "N/m", "Differentials", 50, 0, 500, "Pre-load Torque", "Initial cross torque between front and rear wheels", {"subCategory":"Center"}],
+        ["$lsdlockcoef_C", "range", "", "Differentials", 0.125, 0, 0.5, "Power Lock Rate", "Additional locking torque proportional to engine torque", {"minDis":0, "maxDis":100,"subCategory":"Center"}],
+        ["$lsdlockcoefrev_C", "range", "", "Differentials", 0.02, 0, 0.5, "Coast Lock Rate" , "Additional locking torque proportional to engine braking", {"minDis":0, "maxDis":100,"subCategory":"Center"}],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        ["differential", "transfercase", "gearbox", 1, {"diffType":"lsd", "lsdPreload":"$lsdpreload_C", "lsdLockCoef":"$lsdlockcoef_C", "lsdRevLockCoef":"$lsdlockcoefrev_C", "diffTorqueSplit":"$difftorquesplit_C", "friction":0.65, "dynamicFriction":0.00044, "torqueLossCoef":0.0105, "uiName":"Center Differential","defaultVirtualInertia":0.1,"speedLimitCoef":0.1}],
+    ],
+},
+}

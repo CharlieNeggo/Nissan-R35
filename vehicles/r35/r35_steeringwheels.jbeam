@@ -1,0 +1,54 @@
+{
+"r35_steer": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Steering Wheel",
+        "value":600,
+    }
+    "slotType" : "r35_steer",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"]
+        //steering wheel
+        ["steering", "r35_steer",   "f1l","f1r","f6l",        {"x":18, "y":0, "z":180}, {"x":0, "y":0.70, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"r35_steer_nismo": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Nismo Steering Wheel",
+        "value":600,
+    }
+    "slotType" : "r35_steer",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"]
+        //steering wheel
+        ["steering", "r35_steer_nismo",   "f1l","f1r","f6l",        {"x":18, "y":0, "z":180}, {"x":0, "y":0.70, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"r35_steer_2017": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2017 Steering Wheel",
+        "value":600,
+    }
+    "slotType" : "r35_steer",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"]
+        //steering wheel
+        ["steering", "r35_steer_2017",   "f1l","f1r","f6l",        {"x":18, "y":0, "z":180}, {"x":0, "y":0.70, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+"r35_steer_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Race Steering Wheel",
+        "value":600,
+    }
+    "slotType" : "r35_steer",
+    "props": [
+        ["func",     "mesh",         "idRef:", "idX:", "idY:", "baseRotation",            "rotation",            "translation",         "min", "max", "offset", "multiplier"]
+        //steering wheel
+        ["steering", "r35_steer_race",   "f1l","f1r","f6l",        {"x":13.9, "y":0, "z":180}, {"x":0, "y":0.70, "z":0}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+},
+}

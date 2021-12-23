@@ -1,0 +1,9 @@
+{
+    "Configuration":"Street Tuned (DCT)",
+    "Transmission":"DCT",
+    "Drivetrain":"AWD",
+  "Description":"Ultimate street weapon, equipped with nitrous oxide for faster acceleration",
+  "Value":170000,
+    "default_color":"Bayside Blue",
+    "Config Type":"Custom",
+}
